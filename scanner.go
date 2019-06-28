@@ -8,10 +8,10 @@ import (
 
 var (
 	// ErrTagMissing occurs when a query has no tag
-	ErrTagMissing = errors.New("Query without tag")
+	ErrTagMissing = errors.New("query without tag")
 
 	// ErrTagOverwritten occurs when a tag is overwritten by a new one
-	ErrTagOverwritten = errors.New("Tag overwritten")
+	ErrTagOverwritten = errors.New("tag overwritten")
 )
 
 // Tag is a string prefixing a Query

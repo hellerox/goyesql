@@ -23,10 +23,10 @@ type parsedLine struct {
 
 var (
 	// -- name: $tag
-	reTag = regexp.MustCompile("^\\s*--\\s*name\\s*:\\s*(.+)")
+	reTag = regexp.MustCompile(`^\\s*--\\s*name\\s*:\\s*(.+)`)
 
 	// -- $comment
-	reComment = regexp.MustCompile("^\\s*--\\s*(.+)")
+	reComment = regexp.MustCompile(`^\\s*--\\s*(.+)`)
 )
 
 func parseLine(line string) parsedLine {
